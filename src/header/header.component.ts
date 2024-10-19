@@ -20,7 +20,7 @@ export class HeaderComponent {
   ];
 
   linkClass =
-    'text-sm text-custom-grey-1 hover:opacity-85 duration-150 py-5 border-b-[2px]';
+    'text-sm text-custom-grey-1 hover:opacity-85 duration-150 py-5 border-b-[1px]';
 
   location = 'New York, NY';
 
