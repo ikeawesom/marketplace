@@ -1,0 +1,19 @@
+<div class="w-full flex gap-8 items-center justify-evenly px-6 py-6 bg-custom-black">
+    @for (filter of filters; track filter.name) {
+        <div class="flex items-center justify-start gap-2 flex-1 border-r-[1px] border-r-custom-grey-3 pr-2">
+            <circle-component [canClick]="false" [src]="'assets/'+filter.icon"/>
+            <select [class]="'text-sm font-semibold w-full bg-transparent ' + (filter.default ? 'text-custom-white-1' : 'text-custom-grey-3')">
+                <option  hidden>{{filter.default ? filter.options[0] : filter.name}}</option>
+                @for (option of filter.options; track option) {
+                    <option class="text-black">{{option}}</option>
+                }
+            </select>
+        </div>
+    }
+    
+    <div class="flex-1">
+        <p class="text-sm text-custom-white-1 mb-1">Salary Range</p>
+        <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+    </div>
+
+</div>
