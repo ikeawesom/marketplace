@@ -1,21 +1,24 @@
 import { Component } from '@angular/core';
-import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { CircleButton } from '../../utilities/circle-button.component';
-import { Options } from '@angular-slider/ngx-slider';
+import { WORK_OPTIONS } from '../options';
 
 @Component({
   selector: 'header-filter',
   standalone: true,
   templateUrl: './header-filter.component.html',
-  imports: [CircleButton, NgxSliderModule],
+  imports: [CircleButton],
 })
 export class HeaderFilterComponent {
-  minValue: number = 1200;
-  maxValue: number = 20000;
-  options: Options = {
-    floor: 1000,
-    ceil: 30000,
-  };
+  sliderVal = 50;
+  minVal = 1000;
+  maxVal = 50000;
+
+  display = parseInt(((this.sliderVal / 100) * this.maxVal).toString());
+
+  handleChange(event: any) {
+    this.sliderVal = event.target.value;
+    this.display = parseInt(((this.sliderVal / 100) * this.maxVal).toString());
+  }
 
   filters = [
     {
@@ -33,7 +36,7 @@ export class HeaderFilterComponent {
     {
       name: 'Experience',
       icon: 'icon_suitcase.svg',
-      options: ['Internship', 'Entry Level', 'Mid Level', 'Senior Level'],
+      options: WORK_OPTIONS,
       default: false,
     },
     {
