@@ -9,7 +9,7 @@ export const DUMMY_JOBS = [
     tags: ['Part time', 'Senior Level', 'Remote'],
     rates: { frequency: 'hr', amount: 160 },
     country: 'San Francisco',
-    color: 'bg-[#FF5733]',
+    color: 'bg-[#FF5733]/20',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const DUMMY_JOBS = [
     tags: ['Full time', 'Mid Level', 'Onsite'],
     rates: { frequency: 'mth', amount: 9000 },
     country: 'Mountain View',
-    color: 'bg-[#33FF57]',
+    color: 'bg-[#33FF57]/20',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const DUMMY_JOBS = [
     tags: ['Contract', 'Senior Level', 'Remote'],
     rates: { frequency: 'yr', amount: 150000 },
     country: 'Redmond',
-    color: 'bg-[#3375FF]',
+    color: 'bg-[#3375FF]/20',
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const DUMMY_JOBS = [
     tags: ['Part time', 'Junior Level', 'Hybrid'],
     rates: { frequency: 'hr', amount: 90 },
     country: 'Palo Alto',
-    color: 'bg-[#FF33A1]',
+    color: 'bg-[#FF33A1]/20',
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const DUMMY_JOBS = [
     tags: ['Full time', 'Senior Level', 'Remote'],
     rates: { frequency: 'mth', amount: 10500 },
     country: 'Cupertino',
-    color: 'bg-[#FFC733]',
+    color: 'bg-[#FFC733]/20',
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ export const DUMMY_JOBS = [
     tags: ['Contract', 'Mid Level', 'Onsite'],
     rates: { frequency: 'yr', amount: 120000 },
     country: 'Menlo Park',
-    color: 'bg-[#FF5733]',
+    color: 'bg-[#FF5733]/20',
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const DUMMY_JOBS = [
     tags: ['Part time', 'Senior Level', 'Remote'],
     rates: { frequency: 'hr', amount: 140 },
     country: 'Los Gatos',
-    color: 'bg-[#33FFF5]',
+    color: 'bg-[#33FFF5]/20',
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ export const DUMMY_JOBS = [
     tags: ['Full time', 'Mid Level', 'Remote'],
     rates: { frequency: 'mth', amount: 8500 },
     country: 'New York',
-    color: 'bg-[#FF5733]',
+    color: 'bg-[#FF5733]/20',
   },
   {
     id: 9,
@@ -105,6 +105,6 @@ export const DUMMY_JOBS = [
     tags: ['Full time', 'Senior Level', 'Onsite'],
     rates: { frequency: 'yr', amount: 135000 },
     country: 'Sunnyvale',
-    color: 'bg-[#FF33C1]',
+    color: 'bg-[#FF33C1]/20',
   },
 ];
