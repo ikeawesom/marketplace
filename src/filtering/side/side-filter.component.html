@@ -1,0 +1,23 @@
+<div class="flex-1 w-[200px] ">
+    <div class="banner relative bg-black h-[250px] rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full flex items-center flex-col justify-center gap-8 p-4">
+            <h1 class="text-custom-white-1 font-bold text-2xl">Get Your best profession with LuckyJob</h1>
+            <primary-button class="w-full">Learn more</primary-button>
+        </div>
+    </div>
+    <div class="mt-7 flex flex-col items-start justify-start gap-4 border-r-2 border-r-custom-grey-1">
+        <h1 class="font-bold text-lg">Filters</h1>
+        <div class="flex flex-col items-start justify-start gap-3">
+            <h4 class="text-sm text-custom-grey-2 font-semibold">Working schedule</h4>
+            @for (option of schedule; track option) {<label class="flex items-center justify-start gap-2 font-bold text-custom-black text-sm">
+                <input type="checkbox" [title]="option" [value]="option"/>{{option}}</label>
+            }
+        </div>
+        <div class="flex flex-col items-start justify-start gap-3">
+            <h4 class="text-sm text-custom-grey-2 font-semibold">Employment type</h4>
+            @for (option of employments; track option) {<label class="flex items-center justify-start gap-2 font-bold text-custom-black text-sm">
+                <input type="checkbox" [title]="option" [value]="option"/>{{option}}</label>
+            }
+        </div>
+    </div>
+</div>
