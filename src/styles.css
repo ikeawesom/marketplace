@@ -12,3 +12,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+input[type="checkbox"]:checked {
+  @apply bg-custom-grey-3;
+}
+input[type="checkbox"]:checked:after {
+  content: "\2713";
+  color: white;
+}
+input[type="checkbox"] {
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  @apply pb-4 rounded-md border-[1px] border-custom-grey-1;
+  box-shadow: none;
+  font-size: 0.6em;
+}
