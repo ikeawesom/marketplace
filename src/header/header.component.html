@@ -1,8 +1,8 @@
-<div class="relative w-full flex items-center justify-between bg-custom-black px-6">
+<div class="relative w-full flex items-center justify-between bg-custom-black px-8">
     <div class="flex items-center justify-start gap-10">
         <div class="flex items-center justify-center"><img src="/assets/logo.svg" width=30/>
         <h1 class="font-bold text-white">{{name}}</h1></div>
-        <nav class="z-20 flex items-center justify-start gap-6">
+        <nav class="z-20 flex items-center justify-start gap-8">
             @for (link of navLinks; track link.id) {
                 <a [routerLink]=link.link (click)="toggleNav(link.title)" [class]="currentPage != link.title ? linkClass + ' border-custom-grey-3' : linkClass + ' text-white border-white'">{{link.title}}</a>
             }
